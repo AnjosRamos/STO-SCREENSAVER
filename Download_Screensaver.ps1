@@ -14,5 +14,13 @@ $destinationPath2 = "C:\Screensaver\Screensaver-sazonal.jpg"
 # Baixe a IMAGEM DO Screensaver do blob e salve no caminho de destino
 Invoke-WebRequest -Uri $blobUrl2 -OutFile $destinationPath2
 
+# Bloco da Tela de bloqueio - CASO NÃO PRECISE COMENTE AS LINHAS ABAIXO.
+# Defina a URL do blob e o caminho de destino - Screensaver
+$blobUrl3 = "https://raw.githubusercontent.com/AnjosRamos/STO-SCREENSAVER/main/ArquivoSCRAnjos.scr"
+$destinationPath3 = "C:\Screensaver\ArquivoSCRAnjos.scr"
+
+# Baixe a IMAGEM DO Screensaver do blob e salve no caminho de destino
+Invoke-WebRequest -Uri $blobUrl3 -OutFile $destinationPath3
+
 
 
